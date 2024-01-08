@@ -38,7 +38,6 @@ string SerializeMessage(IMessageSerializer serializer, object message)
     return reader.ReadToEnd();
 }
 
-//TODO test interface messages
 T CreateMessage<T>() where T : class
 {
     AutoFaker<T> faker = new AutoFaker<T>();
